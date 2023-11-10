@@ -16,7 +16,28 @@ https://FBA.plus (soon to be released)
 Examples -
 
 *MarketplaceParticipations*
-https://developer-docs.amazon.com/sp-api/docs/sellers-api-v1-reference##getmarketplaceparticipations
-data = deserializeJSON(postRequest(keys=arguments.keys,path="sellers/v1/marketplaceParticipations"));
+<br>https://developer-docs.amazon.com/sp-api/docs/sellers-api-v1-reference##getmarketplaceparticipations
 
-keys = {}
+<br>
+<code>
+  data = deserializeJSON(postRequest(keys=arguments.keys,path="sellers/v1/marketplaceParticipations"));
+</code>
+----
+# sample key vars
+<pre>
+keys = {
+"client_id" : "amzn1.application-oa2-clie...",
+"client_secret" :	"1d26...",
+"iam" :	"17...:user/w...",
+"refresh_token" :	"Atzr...",
+"seller_id" :	"A2L..",
+"strPublicKey" :	"AKI...",
+"strSecretKey" :	"dytsZa...",
+"zone" :	"us-east-1"
+}
+</pre>
+<hr>
+<br>
+(1) Defined in SC: seller_id, client_id, client_secret, refresh_token 
+<br>
+(2) Defined in AWS/IAM: IAM, PublicKey/SecretKey, Zone
